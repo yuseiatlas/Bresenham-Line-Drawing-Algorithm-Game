@@ -1,0 +1,98 @@
+@import url(http://fonts.googleapis.com/css?family=Wellfleet);
+body {
+    font-family: 'Wellfleet', times, serif;
+    color: #58595B;
+    margin: 0px auto;
+    padding: 30px;
+    background: #f7f7f7;
+    text-align: center;
+}
+h1{
+	color: teal;
+}td{
+	border: 1px solid black;
+	width: 30px;
+	height: 30px;
+}
+/*Labels for the inputs*/
+.title{
+	height: 30px;
+	width: 170px;
+	margin-top: 10px;
+	float: left;
+}
+/*Input text fields styles*/
+input{
+	margin:5px;
+	width: 250px;
+	height: 30px;
+	border-radius: 3px;
+}
+.input{
+	width: 500px;
+	margin:5px 0px 10px 400px;
+}
+/*input buttons styles*/
+button{
+	width: 80px;
+	height: 30px;
+	border: none;
+	border-radius: 2px;
+	background: teal;
+	color:#f7f7f7;
+}
+button:active{
+	border: 2px solid teal;
+	background: #f7f7f7;
+	color:black;
+	transition-duration: 300ms;
+}
+
+.next{
+	width: 80px;
+	height: 30px;
+	border: none;
+	border-radius: 2px;
+	background: #F7924E;
+	color:#f7f7f7;
+}
+/*styles for the bresenham generated table
+*/
+#data{
+	margin-top:30px;
+	margin-bottom: 20px;
+} 
+/*styles for the difficuly drop down menu*/
+#menu{
+	border:border solid teal;
+	width: 100px;
+	height: 25px;
+	border-radius: 5px;
+	//font-size: 100%;
+	font-weight: bold;
+	background-color: #f7f7f7;
+}
+#menu:hover{
+	background-color: teal;
+	color: white;
+}
+option{
+	font-weight: bold;
+}
+/*styles for the highlighting the table cells
+clicked is user input
+final is the correct solution
+clicked & final is the user successfull choices
+*/
+.start{
+	background-color: black;
+}
+.clicked{
+	background-color: blue;
+}
+.final{
+	background-color: red;
+}
+.clicked.final{
+	background-color: green;
+}

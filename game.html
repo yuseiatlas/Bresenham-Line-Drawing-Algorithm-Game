@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bresenham Line Game</title>
+		<link rel="stylesheet" type="text/css" href="style/game.css">
+	</head>
+	<body>
+		<h1>Bresenham Line Game</h1>
+		<!--
+			this paragraph will display the score and the winning percentage
+		-->
+		<p id="para"></p>
+		<!--
+			difficulty menu
+		-->
+		<select name="menu" id="menu">
+			<option value="1">Beginner</option>
+			<option value="2">Intermidiate</option>
+			<option value="3">Hard</option>
+			<option value="4">Hell</option>
+			<option value="5" id="custom">Custom...</option>
+			<option value="6">Random</option>
+		</select>
+		<button id="submit">New Game</button>
+		<!--
+			the correct input fields and labels if the user chooses a custom
+			level difficulty
+		-->
+		<div class="input">
+				<label id="label1" for="rows" class="title" hidden="hidden">Number of rows</label>
+				<input type="text" name="rows" id="rows" placeholder="ROWS" hidden="hidden">
+		</div>
+		<div class="input">
+				<label id="label2" for="columns" class="title" hidden="hidden">Number of columns</label>
+				<input type="text" name="columns" id="columns" placeholder="COLUMNS" hidden="hidden">
+			</div>
+		<div id="data">
+			<!--
+			table of the soon-to-be generated bresenham cells
+			-->
+			<table cellpadding="5px" id="gameTable">
+				
+			</table>
+		</div>
+		<button id="solve" hidden="hidden">Solve</button>
+		<button id="next" class="next" hidden="hidden">Next</button>
+		<script type="text/javascript" src="script/game.js"></script>
+	</body>
+</html>
